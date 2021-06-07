@@ -1,0 +1,135 @@
+.subscribe {
+  height: 448px;
+  background-image: url(../images/bg-subscribe.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.subscribe__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.subscribe__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 97px;
+  margin-right: 327px;
+}
+
+.subscribe__left__icon {
+  margin-bottom: 30px;
+}
+
+.subscribe__left__content {
+  max-width: 360px;
+  height: 100%;
+}
+
+.subscribe__left__text {
+  font-size: 20px;
+  font-style: italic;
+  line-height: 24px;
+  text-align: center;
+  font-weight: 400;
+  color: #222224;
+}
+
+.subscribe__right__content {
+  margin-bottom: 32px;
+  color: #222224;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.subscribe__right__heading {
+  font-size: 24px;
+  margin-top: 148px;
+}
+
+.subscribe__right__text {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.subscribe__form {
+  height: 46px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.subscribe__form__input {
+  width: 256px;
+  height: 49px;
+  background-color: #e1e1e1;
+  border: 0;
+  border-radius: 23px 0 0 23px;
+  padding-left: 22px;
+  color: #222224;
+  opacity: 0.67;
+}
+
+.subscribe__form ::-webkit-input-placeholder {
+  opacity: 0.67;
+  color: #222224;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+}
+
+.subscribe__form :-ms-input-placeholder {
+  opacity: 0.67;
+  color: #222224;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+}
+
+.subscribe__form ::-ms-input-placeholder {
+  opacity: 0.67;
+  color: #222224;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+}
+
+.subscribe__form ::placeholder {
+  opacity: 0.67;
+  color: #222224;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+}
+
+.subscribe__form__button {
+  height: 49px;
+  padding: 0 20px;
+  border: 0;
+  border-radius: 0 23px 23px 0;
+  background-color: #fff;
+  color: #f16d7f;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0.35px;
+}
+
+.subscribe__form__button:hover {
+  background-color: #f16d7f;
+  color: #fff;
+}
+/*# sourceMappingURL=subscribe.css.map */
