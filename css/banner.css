@@ -1,0 +1,45 @@
+.banner {
+  height: 764px;
+  background-color: #F1E4E6;
+  margin-bottom: 65px;
+}
+
+.banner__wrap {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-image: url(../images/bg-top.png);
+  background-repeat: no-repeat;
+  background-position: -228px 0;
+}
+
+.banner__content {
+  max-width: 377px;
+}
+
+.banner__title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: left;
+  padding-left: 16px;
+  border-left: 12px solid #F16D7F;
+}
+
+.banner__title__bold {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 58px;
+}
+
+.banner__title__pink {
+  color: #F16D7F;
+}
+/*# sourceMappingURL=banner.css.map */
