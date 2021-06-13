@@ -1,13 +1,24 @@
 .filter {
-    margin-bottom: 49px;
+    margin-bottom: 133px;
+    .container {
+        position: relative;
+    }
     &__wrap {
         display: flex;
+        position: absolute;
+        z-index: 1;
+    }
+    &__wrap>&__menu {
+        width: 360px;
     }
     &__menu {
-        width: 360px;
-        height: 100%;
+        // width: 360px;
+        // height: 100%;
         cursor: pointer;
-        padding: 13px 0 16px;
+        // padding: 13px 0 16px;
+        &__box {
+            z-index: 100;
+        }
         &__title {
             font-size: 14px;
             line-height: 17px;
@@ -17,6 +28,7 @@
             padding: 13px 0 16px 16px;
         }
         &[open]:first-child {
+            background-color: #FFF;
             box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16px);
         }
     }
@@ -31,6 +43,9 @@
     }
     &__menu[open]>&__summary {
         color: #EF5B70;
+    }
+    &__menu[open]>&__summary &__summary__icon {
+        fill: #EF5B70;
     }
     &__menu--inner &__summary {
         border-left: 5px solid #EF5B70;
@@ -51,6 +66,7 @@
     }
     &__summary__icon {
         padding: 15px 0 11px 0;
+        fill: #6F6E6E;
     }
     &__form {
         display: flex;
@@ -64,6 +80,16 @@
         }
         &__checkbox {
             display: none;
+            border: 0;
+            background: #FFFFFF;
+            color: #6f6e6e;
+            box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+            padding: 9px 9px 12px 9px;
+            .checkbox {
+                border: 1px solid #EBEBEB;
+                margin-right: 10px;
+                color: #6f6e6e;
+            }
         }
         &__group:hover &__checkbox {
             display: block;
