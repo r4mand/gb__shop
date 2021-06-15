@@ -1,12 +1,14 @@
-    @import url('header.css');
-    @import url('breadcrumbs.css');
-    @import url('filter.css');
-    @import url('banner.css');
-    @import url('offers.css');
-    @import url('catalog.css');
-    @import url('about.css');
-    @import url('subscribe.css');
-    @import url('footer.css');
+    @import 'blocks/_header';
+    @import 'blocks/_breadcrumbs';
+    @import 'blocks/_filter';
+    @import 'blocks/slider';
+    @import 'blocks/description';
+    @import 'blocks/_banner';
+    @import 'blocks/_offers';
+    @import 'blocks/_catalog';
+    @import 'blocks/_about';
+    @import 'blocks/_subscribe';
+    @import 'blocks/_footer';
     * {
         margin: 0;
         padding: 0;
