@@ -1,0 +1,20 @@
+.cart {
+    &__wrap {
+        display: flex;
+    }
+    &__item {
+        display: flex;
+        filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+        &:not(:last-child) {
+            margin-bottom: 40px;
+        }
+        &__text {
+            font-size: 22px;
+            line-height: 26px;
+            color: #575757;
+        }
+        &__price {
+            color: #F16D7F;
+        }
+    }
+}
