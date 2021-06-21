@@ -1,0 +1,25 @@
+.slider {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F7F7F7;
+    border: 1px solid #EAEAEA;
+    margin-top: -51px;
+    &__button {
+        position: absolute;
+        cursor: pointer;
+        background: rgba(42, 42, 42, 0.15);
+        border: 0;
+        padding: 13px 17px;
+        &__left {
+            left: 5px;
+        }
+        &__right {
+            right: 5px;
+        }
+        &:hover {
+            color: #EF5B70;
+        }
+    }
+}
