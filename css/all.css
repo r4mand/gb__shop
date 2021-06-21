@@ -313,28 +313,28 @@ footer .footer__right__links:hover {
   max-height: 180px;
 }
 
-.offers__item-women {
+.offers__item--women {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 22, 22, 0.7))), url(../images/women.png);
   background: linear-gradient(rgba(33, 22, 22, 0.7)), url(../images/women.png);
 }
 
-.offers__item-men {
+.offers__item--men {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 22, 22, 0.7))), url(../images/men.png);
   background: linear-gradient(rgba(33, 22, 22, 0.7)), url(../images/men.png);
 }
 
-.offers__item-kids {
+.offers__item--kids {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 22, 22, 0.7))), url(../images/kids.png);
   background: linear-gradient(rgba(33, 22, 22, 0.7)), url(../images/kids.png);
 }
 
-.offers__item-accessories {
+.offers__item--accessories {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 22, 22, 0.7))), url(../images/acc.png);
   background: linear-gradient(rgba(33, 22, 22, 0.7)), url(../images/acc.png);
 }
 
 .offers__item__link {
-  max-width: 125px;
+  max-width: 155px;
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
@@ -342,7 +342,7 @@ footer .footer__right__links:hover {
   color: #fff;
 }
 
-.offers__item__link-pink {
+.offers__item__link--pink {
   font-size: 24px;
   font-weight: 700;
   line-height: 29px;
@@ -863,7 +863,7 @@ footer .footer__right__links:hover {
 }
 
 .catalog__button {
-  max-width: 212px;
+  max-width: 214px;
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
@@ -1119,11 +1119,147 @@ footer .footer__right__links:hover {
   background: #F16D7F;
 }
 
+.registration {
+  padding-top: 13px;
+  margin-bottom: 96px;
+}
+
+.registration__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.registration__content {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  color: #000000;
+  margin-left: 128px;
+}
+
+.registration__title {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  color: #000000;
+  margin-bottom: 22px;
+}
+
+.registration__text {
+  margin-bottom: 21px;
+}
+
+.registration__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.registration__item::before {
+  content: "\f00c";
+  font-family: FontAwesome;
+  margin-right: 22px;
+  font-size: 18px;
+}
+
+.registration__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.registration__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.registration__form__title {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  color: #222222;
+  margin-bottom: 20.5px;
+}
+
+.registration__form__input {
+  width: 360px;
+  height: 45px;
+  padding-left: 17px;
+  border: 1px solid #A4A4A4;
+}
+
+.registration__form__input:nth-child(2n) {
+  margin-bottom: 20px;
+}
+
+.registration__form__input--radio {
+  margin-right: 10px;
+}
+
+.registration__form__label {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 13px;
+  color: #000000;
+}
+
+.registration__form__label:not(:last-child) {
+  margin-right: 20px;
+}
+
+.registration__form__group:first-child {
+  margin-bottom: 34px;
+}
+
+.registration__form__group:nth-child(2n) {
+  margin-bottom: 34px;
+}
+
+.registration__form__group:last-of-type {
+  margin-bottom: 39px;
+}
+
+.registration__form__text {
+  max-width: 359px;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+  margin-top: 15px;
+}
+
+.registration__form__button {
+  cursor: pointer;
+  width: 167px;
+  height: 50px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F;
+  border: 1px solid #F16D7F;
+  background: #fff;
+}
+
+.registration__form__button:hover {
+  color: #fff;
+  background: #F16D7F;
+}
+
+.registration__form__button > i {
+  padding-left: 20px;
+}
+
 * {
   margin: 0;
   padding: 0;
   font-family: 'Lato', sans-serif;
   outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .container {

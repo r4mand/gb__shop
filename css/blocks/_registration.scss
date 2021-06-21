@@ -1,0 +1,104 @@
+.registration {
+    padding-top: 13px;
+    margin-bottom: 96px;
+    &__wrap {
+        display: flex;
+    }
+    &__content {
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 29px;
+        color: #000000;
+        margin-left: 128px;
+    }
+    &__title {
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 29px;
+        color: #000000;
+        margin-bottom: 22px;
+    }
+    &__text {
+        margin-bottom: 21px;
+    }
+    &__item:not(:last-child) {
+        margin-bottom: 16px;
+    }
+    &__item::before {
+        content: "\f00c";
+        font-family: FontAwesome;
+        margin-right: 22px;
+        font-size: 18px;
+    }
+    &__left {
+        display: flex;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        &__title {
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 19px;
+            color: #222222;
+            margin-bottom: 20.5px;
+        }
+        &__input {
+            width: 360px;
+            height: 45px;
+            padding-left: 17px;
+            border: 1px solid #A4A4A4;
+            &:nth-child(2n) {
+                margin-bottom: 20px;
+            }
+            &--radio {
+                margin-right: 10px;
+            }
+        }
+        &__label {
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 13px;
+            color: #000000;
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+        }
+        &__group:first-child {
+            margin-bottom: 34px;
+        }
+        &__group:nth-child(2n) {
+            margin-bottom: 34px;
+        }
+        &__group:last-of-type {
+            margin-bottom: 39px;
+        }
+        &__text {
+            max-width: 359px;
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 16px;
+            color: #B1B1B1;
+            margin-top: 15px;
+        }
+        &__button {
+            cursor: pointer;
+            width: 167px;
+            height: 50px;
+            font-size: 14px;
+            line-height: 17px;
+            color: #F16D7F;
+            border: 1px solid #F16D7F;
+            background: #fff;
+            // padding: 16px 66px 17px 29px;
+            &:hover {
+                color: #fff;
+                background: #F16D7F;
+            }
+            &>i {
+                padding-left: 20px;
+            }
+        }
+    }
+}
