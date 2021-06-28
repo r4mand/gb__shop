@@ -1,5 +1,7 @@
 header {
     background-color: #222222;
+    position: relative;
+    z-index: 2;
     .header {
         &__wrap {
             display: flex;
@@ -7,29 +9,122 @@ header {
             padding-top: 18px;
             padding-bottom: 18px;
         }
-        &__right {
-            &_humburger-menu {
-                margin-right: 33px;
+        &__account {
+            margin-right: 33px;
+        }
+        &__basket {
+            position: relative;
+            &__count {
+                position: absolute;
+                display: flex;
+                right: -10px;
+                top: -20px;
+                align-items: center;
+                justify-content: center;
+                width: 19px;
+                height: 19px;
+                background: #F16D7F;
+                border-radius: 50%;
+                color: white;
+                font-size: 12px;
             }
-            &_account {
-                margin-right: 33px;
+        }
+        &__nav {
+            position: absolute;
+            top: 77px;
+            right: 0;
+            z-index: 10;
+            transition: ease-in-out .5s;
+            box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16px);
+        }
+        &__menu {
+            margin-right: 25px;
+            color: #fff;
+            font-size: 23px;
+            vertical-align: bottom;
+            cursor: pointer;
+        }
+    }
+}
+
+.nav {
+    width: 232px;
+    background-color: #fff;
+    height: calc(100vh-63px);
+    padding: 37px 0 52px 33px;
+    &__wrap {
+        position: relative;
+    }
+    &__close {
+        position: absolute;
+        right: 17px;
+        top: -16px;
+        cursor: pointer;
+    }
+    &__title {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        color: #000000;
+        margin-bottom: 24px;
+        &__category {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17px;
+            color: #F16D7F;
+            margin-bottom: 12px;
+        }
+    }
+    &__link {
+        display: block;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        color: #6F6E6E;
+        margin-left: 22px;
+        margin-bottom: 16px;
+        &:hover {
+            color: #F16D7F;
+        }
+    }
+}
+
+#burger {
+    display: none;
+}
+
+#burger:checked~.header__nav {
+    visibility: visible;
+    opacity: 1;
+    // right: 383px;
+}
+
+#burger:not(checked)~.header__nav {
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+}
+
+@media(max-width:1172px) {
+    header {
+        .container {
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+    }
+}
+
+@media(max-width:399px) {
+    header {
+        .header {
+            &__account {
+                display: none;
             }
-            &_basket {
-                position: relative;
-                &-count {
-                    position: absolute;
-                    display: flex;
-                    right: -10px;
-                    top: -20px;
-                    align-items: center;
-                    justify-content: center;
-                    width: 19px;
-                    height: 19px;
-                    background: #F16D7F;
-                    border-radius: 50%;
-                    color: white;
-                    font-size: 12px;
-                }
+            &__basket {
+                display: none;
+            }
+            &__menu {
+                margin-right: 0;
             }
         }
     }

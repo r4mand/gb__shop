@@ -44,3 +44,41 @@
         }
     }
 }
+
+@media(max-width:1172px) {
+    .offers {
+        margin-bottom: 135px;
+        .container {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        &__item {
+            width: 232px;
+            height: 168px;
+            margin-bottom: 20px;
+            background-size: 232px;
+            &:last-child {
+                width: 100%;
+                max-height: 116px;
+                background-size: 734px;
+            }
+        }
+    }
+}
+
+@media(max-width:399px) {
+    .offers {
+        margin-bottom: 32px;
+        &__item {
+            width: 343px;
+            height: 247px;
+            margin-bottom: 32px;
+            background-size: 343px;
+            &:last-child {
+                max-height: 116px;
+                width: 100%;
+                background-size: cover;
+            }
+        }
+    }
+}

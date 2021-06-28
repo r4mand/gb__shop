@@ -23,16 +23,80 @@
             </div>
 
             <div class="header__right">
-                <a href="#" class="header__right_humburger-menu">
-                    <img src="images/button-menu.svg" alt="">
+
+                <input id="burger" type="checkbox">
+                <label class="header__menu" for="burger">&#9776;</label>
+
+                <nav class="header__nav nav">
+                    <div class="nav__wrap">
+                        <label class="nav__close" for="burger"><i class="fas fa-times"></i></label>
+                        <p class="nav__title">MENU</p>
+                        <p class="nav__title__category">MAN</p>
+                        <ul class="nav__items">
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Accessories</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Bags</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Denim</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">T-Shirts</a>
+                            </li>
+                        </ul>
+
+                        <p class="nav__title__category">WOMEN</p>
+                        <ul class="nav__items">
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Accessories</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Jackets & Coats</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Polos</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">T-Shirts</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Shirts</a>
+                            </li>
+                        </ul>
+
+                        <p class="nav__title__category">KIDS</p>
+                        <ul class="nav__items">
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Accessories</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Jackets & Coats</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Polos</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">T-Shirts</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Shirts</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Bags</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <a href="registration.html" class="header__account">
+                    <img src="images/button-account.svg" alt="account">
                 </a>
 
-                <a href="registration.html" class="header__right_account">
-                    <img src="images/button-account.svg" alt="">
-                </a>
-                <a href="cart.html" class="header__right_basket">
-                    <img src="images/basket.svg" alt="">
-                    <span class="header__right_basket-count">5</span>
+                <a href="cart.html" class="header__basket">
+                    <img src="images/basket.svg" alt="basket">
+                    <span class="header__basket__count">5</span>
                 </a>
             </div>
         </div>
@@ -98,7 +162,7 @@
 
 
                 <div class="cart__right">
-                    <form class="cart__form" action="">
+                    <form class="cart__form" action="#">
                         <h3 class="cart__form__title">SHIPPING ADRESS</h3>
                         <input class="cart__form__input" type="text" placeholder="Bangladesh" required><br>
                         <input class="cart__form__input" type="text" placeholder="State" required><br>
