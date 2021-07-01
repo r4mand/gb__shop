@@ -85,3 +85,42 @@
         }
     }
 }
+
+@media(max-width:1172px) {
+    .description {
+        &__content {
+            margin: 65px 107px;
+        }
+    }
+}
+
+@media(max-width:399px) {
+    .description {
+        margin-bottom: 64px;
+        .container {
+            padding: 0;
+        }
+        &__content {
+            margin: 65px 25px;
+        }
+        &__title {
+            margin-bottom: 32px;
+        }
+        &__text {
+            line-height: 20px;
+        }
+        &__price {
+            margin-bottom: 32px;
+        }
+        &__choice {
+            margin-bottom: 65px;
+            &__group {
+                font-size: 10px;
+                line-height: 12px;
+                &:not(:last-child) {
+                    margin-right: 25px;
+                }
+            }
+        }
+    }
+}
