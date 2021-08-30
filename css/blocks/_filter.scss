@@ -1,5 +1,6 @@
 .filter {
-    margin-bottom: 133px;
+    margin-top: 40px;
+    margin-bottom: 134px;
     .container {
         position: relative;
     }
@@ -90,6 +91,27 @@
         }
         &__group:hover &__checkbox {
             display: block;
+        }
+    }
+}
+
+@media (max-width:1172px) {
+    .filter {
+        margin-top: 13px;
+        margin-bottom: 81px;
+        &__wrap {
+            justify-content: space-around;
+        }
+    }
+}
+
+@media(max-width:399px) {
+    .filter {
+        &__form {
+            &__span {
+                font-size: 12px;
+                line-height: 14px;
+            }
         }
     }
 }

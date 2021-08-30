@@ -2,7 +2,7 @@
     background: #F8F3F4;
     padding-top: 59px;
     padding-bottom: 60px;
-    margin-bottom: 51px;
+    // margin-bottom: 51px;
     &__wrap {
         display: flex;
         justify-content: space-between;
@@ -30,6 +30,8 @@
     }
 }
 
+// @media(max-width:1195px){
+// }
 @media(max-width:399px) {
     .breadcrumbs {
         padding-top: 24px;

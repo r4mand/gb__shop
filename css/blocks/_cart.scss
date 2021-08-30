@@ -162,7 +162,7 @@
 
 @media (max-width:1172px) {
     .cart {
-        margin-top: 8px;
+        margin-top: 59px;
         &__wrap {
             flex-direction: column;
         }
@@ -198,6 +198,7 @@
 
 @media (max-width:399px) {
     .cart {
+        margin-top: 39px;
         .container {
             padding-left: 8px;
             padding-right: 8px;

@@ -688,7 +688,6 @@ footer .footer__right__links:hover {
           align-items: center;
   background: #F7F7F7;
   border: 1px solid #EAEAEA;
-  margin-top: -51px;
 }
 
 .slider__button {
@@ -897,7 +896,6 @@ footer .footer__right__links:hover {
   background: #F8F3F4;
   padding-top: 59px;
   padding-bottom: 60px;
-  margin-bottom: 51px;
 }
 
 .breadcrumbs__wrap {
@@ -954,7 +952,8 @@ footer .footer__right__links:hover {
 }
 
 .filter {
-  margin-bottom: 133px;
+  margin-top: 40px;
+  margin-bottom: 134px;
 }
 
 .filter .container {
@@ -1078,6 +1077,24 @@ footer .footer__right__links:hover {
 
 .filter__form__group:hover .filter__form__checkbox {
   display: block;
+}
+
+@media (max-width: 1172px) {
+  .filter {
+    margin-top: 13px;
+    margin-bottom: 81px;
+  }
+  .filter__wrap {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media (max-width: 399px) {
+  .filter__form__span {
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 
 .catalog__wrap {
@@ -1529,7 +1546,7 @@ footer .footer__right__links:hover {
 
 @media (max-width: 1172px) {
   .cart {
-    margin-top: 8px;
+    margin-top: 59px;
   }
   .cart__wrap {
     -webkit-box-orient: vertical;
@@ -1573,6 +1590,9 @@ footer .footer__right__links:hover {
 }
 
 @media (max-width: 399px) {
+  .cart {
+    margin-top: 39px;
+  }
   .cart .container {
     padding-left: 8px;
     padding-right: 8px;
@@ -1657,7 +1677,7 @@ footer .footer__right__links:hover {
 }
 
 .registration {
-  padding-top: 13px;
+  margin-top: 64px;
   margin-bottom: 96px;
 }
 
@@ -1796,6 +1816,9 @@ footer .footer__right__links:hover {
 }
 
 @media (max-width: 1172px) {
+  .registration {
+    margin-top: 40px;
+  }
   .registration__content {
     font-size: 16px;
     line-height: 19px;
