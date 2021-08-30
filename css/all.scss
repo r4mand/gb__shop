@@ -42,3 +42,17 @@ ul {
 .logo {
     padding-right: 41px;
 }
+
+@media (max-width:1172px) {
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+// @media (max-width:399px) {
+//     .container {
+//         padding-left: 16px;
+//         padding-right: 16px;
+//     }
+// }

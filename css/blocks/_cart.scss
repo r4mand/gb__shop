@@ -2,6 +2,7 @@
     margin-top: 96px;
     &__wrap {
         display: flex;
+        padding-bottom: 128px;
     }
     &__items {
         margin-bottom: 72.5px;
@@ -9,7 +10,6 @@
     &__buttons {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 128px;
     }
     &__button {
         font-size: 14px;
@@ -37,12 +37,14 @@
         &__title {
             max-width: 188px;
             font-size: 24px;
+            font-weight: 400;
             line-height: 29px;
             color: #222222;
             margin-bottom: 42px;
         }
         &__text {
             font-size: 22px;
+            font-weight: 400;
             line-height: 26px;
             color: #575757;
             &:last-child {
@@ -64,6 +66,8 @@
             margin-left: 24px;
         }
         &__button {
+            width: 18px;
+            height: 18px;
             fill: #575757;
             margin-top: 28px;
             margin-right: 22px;
@@ -87,15 +91,11 @@
             height: 45px;
             border: 1px solid #A4A4A4;
             padding-left: 17px;
+            padding-right: 17px;
             text-transform: capitalize;
             &:not(:last-child) {
                 margin-bottom: 21px;
             }
-            //  ::placeholder {
-            //     font-weight: 300;
-            //     font-size: 13px;
-            //     line-height: 16px;
-            // }
         }
         &__button {
             cursor: pointer;
@@ -114,7 +114,6 @@
         }
     }
     &__checkout {
-        // width: 360px;
         background: #F5F3F3;
         padding: 39px 43px 42px 44px;
         &__content {
@@ -146,17 +145,132 @@
             }
         }
         &__button {
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 19px;
+            color: #F16D7F;
             border: 1px solid #F16D7F;
             background: #fff;
             padding: 15px 43px 16px 41px;
-            &__link {
-                color: #F16D7F;
-            }
-            &:hover,
-            &:hover>&__link {
+            &:hover {
                 color: #fff;
                 background: #F16D7F;
             }
+        }
+    }
+}
+
+@media (max-width:1172px) {
+    .cart {
+        margin-top: 8px;
+        &__wrap {
+            flex-direction: column;
+        }
+        &__items {
+            margin-bottom: 62px;
+        }
+        &__item {
+            &__content {
+                margin-right: 230px;
+            }
+        }
+        &__buttons {
+            justify-content: space-evenly;
+        }
+        &__right {
+            display: flex;
+            align-items: end;
+            justify-content: space-between;
+            margin-top: 65px;
+            margin-left: 0;
+        }
+        &__form {
+            margin-bottom: 0;
+            &__input {
+                width: 360px;
+            }
+        }
+        &__checkout {
+            margin-top: 38px;
+        }
+    }
+}
+
+@media (max-width:399px) {
+    .cart {
+        .container {
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+        &__wrap {
+            padding-bottom: 96px;
+        }
+        &__items {
+            margin-bottom: 30px;
+        }
+        &__item {
+            max-height: 188px;
+            &:not(:last-child) {
+                margin-bottom: 32px;
+            }
+            &__img>img {
+                width: 144px;
+                height: 188px;
+            }
+            &__content {
+                margin: 14px 31px 38px 17px;
+            }
+            &__title {
+                font-size: 16px;
+                line-height: 19px;
+                margin-bottom: 26px;
+            }
+            &__text {
+                font-size: 14px;
+                line-height: 17px;
+            }
+            &__number {
+                width: 24px;
+                height: 15px;
+                font-size: 10px;
+                line-height: 12px;
+                margin-left: 15px;
+            }
+            &__button {
+                width: 10px;
+                height: 11px;
+                margin-top: 17px;
+                margin-right: 12px;
+            }
+        }
+        &__buttons {
+            justify-content: space-between;
+        }
+        &__button {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 14px;
+            color: #575757;
+            padding: 9px 18px
+        }
+        &__right {
+            flex-direction: column;
+            align-items: initial;
+            margin-top: 48px;
+        }
+        &__form {
+            margin-right: 0;
+            margin-bottom: 48.5px;
+            &__input {
+                width: 360px;
+            }
+            &__button {
+                font-weight: 400;
+            }
+        }
+        &__checkout {
+            margin-top: 0;
+            padding: 39px 34px 42px 44px;
         }
     }
 }

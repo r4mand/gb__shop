@@ -23,3 +23,40 @@
         }
     }
 }
+
+@media(max-width:1172px) {
+    .slider {
+        &__img>img {
+            width: 466px;
+            height: 565px;
+            margin-bottom: 29px;
+        }
+        &__button {
+            &__left {
+                left: 0;
+            }
+            &__right {
+                right: 0;
+            }
+        }
+    }
+}
+
+@media(max-width:399px) {
+    .slider {
+        &__img>img {
+            width: 374px;
+            height: 454px;
+            margin-top: 85px;
+            margin-bottom: 85px;
+        }
+        &__button {
+            &__left {
+                left: 0;
+            }
+            &__right {
+                right: 0;
+            }
+        }
+    }
+}

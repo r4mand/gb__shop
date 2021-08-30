@@ -34,3 +34,29 @@ footer {
         }
     }
 }
+
+@media(max-width:1172px) {
+    footer {
+        .container {
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+    }
+}
+
+@media(max-width:399px) {
+    footer {
+        height: 143px;
+        .footer {
+            &__wrap {
+                flex-direction: column-reverse;
+            }
+            &__left {
+                margin-top: 40px;
+            }
+            &__right {
+                margin-top: 43px;
+            }
+        }
+    }
+}
