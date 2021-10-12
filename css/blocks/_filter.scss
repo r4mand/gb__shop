@@ -62,26 +62,36 @@
         }
     }
     &__summary__icon {
-        padding: 15px 0 11px 0;
+        margin: 15px 0 11px 0;
         fill: #6F6E6E;
     }
     &__form {
         display: flex;
         justify-content: space-between;
         margin: 16px;
+        &__group {
+            position: relative;
+        }
         &__span {
             font-size: 14px;
             line-height: 17px;
             color: #6F6E6E;
             margin-right: 28px;
+            &>i {
+                padding-left: 10px;
+            }
         }
         &__checkbox {
-            display: none;
+            position: absolute;
+            opacity: 0;
+            text-transform: capitalize;
             border: 0;
+            border-radius: 4px;
             background: #FFFFFF;
             color: #6f6e6e;
             box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
             padding: 9px 9px 12px 9px;
+            margin-top: 5px;
             .checkbox {
                 border: 1px solid #EBEBEB;
                 margin-right: 10px;
@@ -89,7 +99,27 @@
             }
         }
         &__group:hover &__checkbox {
-            display: block;
+            opacity: 1;
+            transition: .5s;
+        }
+        &__range {
+            position: absolute;
+            display: flex;
+            opacity: 0;
+            border: 0;
+            border-radius: 4px;
+            background: #FFFFFF;
+            color: #6f6e6e;
+            box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+            padding: 9px 9px 12px 9px;
+            margin-top: 5px;
+            .range {
+                margin: 0 9px;
+            }
+        }
+        &__group:hover &__range {
+            opacity: 1;
+            transition: .5s;
         }
     }
 }

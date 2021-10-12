@@ -96,7 +96,6 @@ header {
 #burger:checked~.header__nav {
     visibility: visible;
     opacity: 1;
-    // right: 383px;
 }
 
 #burger:not(checked)~.header__nav {

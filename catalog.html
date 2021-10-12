@@ -213,21 +213,34 @@
                     <form class="filter__form" action="#">
                         <div class="filter__form__group">
                             <span class="filter__form__span">TRENDING NOW<i class="fas fa-chevron-down"></i></span>
+
+                            <fieldset class="filter__form__checkbox">
+                                <input class="checkbox" type="checkbox" id="winter"><label for="winter">winter</label><br>
+                                <input class="checkbox" type="checkbox" id="spring"><label for="spring">spring</label><br>
+                                <input class="checkbox" type="checkbox" id="summer"><label for="summer">summer</label><br>
+                                <input class="checkbox" type="checkbox" id="autumn"><label for="autumn">autumn</label>
+                            </fieldset>
                         </div>
 
                         <div class="filter__form__group">
                             <span class="filter__form__span">SIZE<i class="fas fa-chevron-down"></i></span>
 
                             <fieldset class="filter__form__checkbox">
-                                <input class="checkbox" type="checkbox">XS<br>
-                                <input class="checkbox" type="checkbox">S<br>
-                                <input class="checkbox" type="checkbox">M<br>
-                                <input class="checkbox" type="checkbox">L
+                                <input class="checkbox" type="checkbox" id="xs"><label for="xs">XS</label><br>
+                                <input class="checkbox" type="checkbox" id="s"><label for="s">S</label><br>
+                                <input class="checkbox" type="checkbox" id="m"><label for="m">M</label><br>
+                                <input class="checkbox" type="checkbox" id="l"><label for="l">L</label>
                             </fieldset>
                         </div>
 
                         <div class="filter__form__group">
                             <span class="filter__form__span">PRICE<i class="fas fa-chevron-down"></i></span>
+
+                            <fieldset class="filter__form__range">
+                                <span>40$</span>
+                                <input class="range" type="range" min="40" max="1000" step="1">
+                                <span>1000$</span>
+                            </fieldset>
                         </div>
 
 
@@ -395,7 +408,7 @@
 
                 <div class="catalog__buttons">
                     <ul class="catalog__pagination">
-                        <li class="catalog__pagination__item__arrow">
+                        <li class="catalog__pagination__item__arrow__left">
                             <span><i class="fas fa-chevron-left"></i></span>
                         </li>
 
@@ -414,14 +427,17 @@
                         <li class="catalog__pagination__item">
                             <a href="#" class="catalog__pagination__item__link">5</a>
                         </li>
+
                         <li class="catalog__pagination__item">
-                            <a href="#" class="catalog__pagination__item__link">6</a>
-                        </li>
-                        <li class="catalog__pagination__item">
-                            <a href="#" class="catalog__pagination__item__link">...20</a>
+                            <span>
+                                <a href="#" class="catalog__pagination__item__link">6</a>
+                            <span class="dots">.....</span>
+                            <a href="#" class="catalog__pagination__item__link">20</a>
+
+                            </span>
                         </li>
 
-                        <li class="catalog__pagination__item__arrow">
+                        <li class="catalog__pagination__item__arrow__right">
                             <span><i class="fas fa-chevron-right"></i></span>
                         </li>
                     </ul>

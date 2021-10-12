@@ -73,6 +73,7 @@
                 font-weight: 700;
                 color: #fff;
                 padding: 7px;
+                transition: .5s;
                 &:hover {
                     box-shadow: 0 0 10px #fff;
                 }
@@ -83,11 +84,13 @@
         }
         &:hover {
             box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+            transition: .5s;
             .catalog__item__button {
                 display: flex;
             }
             .catalog__item__img {
                 filter: brightness(50%);
+                transition: .5s;
             }
         }
     }
@@ -109,28 +112,45 @@
         background-color: #fff;
         border: 1px solid #f16d7f;
         padding: 14.5px 38.5px 13.5px;
+        transition: .5s;
         &:hover {
             background-color: #f16d7f;
             color: #fff;
         }
     }
     &__pagination {
-        width: 283px;
-        height: 43px;
+        // width: 283px;
         border: 1px solid #EBEBEB;
         border-radius: 3px 3px 3px 3px;
         display: flex;
         justify-content: space-between;
+        padding: 11px 16px;
         &__item {
-            margin: 15px 0 15px 0;
-            &__arrow {
-                margin: 15px 16px 15px 16px;
+            margin: 0 11px;
+            &__ .dots {
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 19px;
+                color: #EBEBEB;
+                transition: .5s;
+                &:hover {
+                    color: #EF5B70;
+                }
+            }
+            &__arrow__left {
+                margin: 0;
+                margin-right: 11px;
+            }
+            &__arrow__right {
+                margin: 0;
+                margin-left: 11px;
             }
             &__link {
                 font-size: 16px;
                 font-weight: 300;
                 line-height: 19px;
                 color: #EBEBEB;
+                transition: .5s;
                 &--active {
                     color: #EF5B70;
                 }
@@ -138,6 +158,12 @@
                     color: #EF5B70;
                 }
             }
+        }
+        &__text {
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 19px;
+            color: #EBEBEB;
         }
     }
 }

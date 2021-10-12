@@ -18,6 +18,7 @@
         color: #000;
         border: 1px solid #A4A4A4;
         padding: 17px 41px 16px 39px;
+        transition: .5s;
         &:hover {
             color: #fff;
             background-color: #F16D7F;
@@ -106,6 +107,7 @@
             background: #fff;
             color: #4A4A4A;
             padding: 10px 14px 12px 15px;
+            transition: .5s;
             &:hover {
                 color: #fff;
                 background-color: #F16D7F;
@@ -152,6 +154,7 @@
             border: 1px solid #F16D7F;
             background: #fff;
             padding: 15px 43px 16px 41px;
+            transition: .5s;
             &:hover {
                 color: #fff;
                 background: #F16D7F;
