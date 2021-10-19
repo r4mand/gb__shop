@@ -89,7 +89,7 @@
             text-transform: capitalize;
             border: 0;
             border-radius: 4px;
-            background: #FFFFFF;
+            background: #fff;
             color: #6f6e6e;
             box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
             padding: 9px 9px 12px 9px;
@@ -126,22 +126,6 @@
     }
 }
 
-@media(max-width:1195px) {
-    .filter {
-        margin-top: 24px;
-        margin-bottom: 90px;
-    }
-}
-
-@media(max-width:399px) {
-    .filter {
-        margin-top: 26px;
-        // &__summary__title {
-        //     display: none;
-        // }
-    }
-}
-
 @media (max-width:1172px) {
     .filter {
         margin-top: 13px;
@@ -154,10 +138,20 @@
 
 @media(max-width:399px) {
     .filter {
+        margin-top: 26px;
         &__form {
             &__span {
                 font-size: 12px;
                 line-height: 14px;
+            }
+            &__checkbox {
+                font-size: 12px;
+                line-height: 14px;
+            }
+            &__range {
+                font-size: 12px;
+                line-height: 14px;
+                margin-left: -101px;
             }
         }
     }

@@ -123,16 +123,16 @@
         padding: 11px 16px;
         &__item {
             margin: 0 11px;
-            .dots {
-                font-size: 16px;
-                font-weight: 300;
-                line-height: 19px;
-                color: #EBEBEB;
-                transition: .5s;
-                &:hover {
-                    color: #EF5B70;
-                }
-            }
+            // .dots {
+            //     font-size: 16px;
+            //     font-weight: 300;
+            //     line-height: 19px;
+            //     color: #EBEBEB;
+            //     transition: .5s;
+            //     &:hover {
+            //         color: #EF5B70;
+            //     }
+            // }
             &__arrow__left {
                 margin: 0;
                 margin-right: 11px;
@@ -170,7 +170,7 @@
     }
 }
 
-@media(max-width:1195px) {
+@media(max-width:1172px) {
     .catalog {
         &__title {
             font-weight: 400;
