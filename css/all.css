@@ -1139,6 +1139,24 @@ footer .footer__right__links:hover {
   }
 }
 
+@media (max-width: 1172px) {
+  .filter {
+    margin-top: 13px;
+    margin-bottom: 81px;
+  }
+  .filter__wrap {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media (max-width: 399px) {
+  .filter__form__span {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
 .catalog__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
