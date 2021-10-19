@@ -1,5 +1,6 @@
 .filter {
-    margin-bottom: 133px;
+    margin-top: 51px;
+    margin-bottom: 145px;
     .container {
         position: relative;
     }
@@ -71,6 +72,7 @@
         margin: 16px;
         &__group {
             position: relative;
+            cursor: pointer;
         }
         &__span {
             font-size: 14px;
@@ -121,5 +123,21 @@
             opacity: 1;
             transition: .5s;
         }
+    }
+}
+
+@media(max-width:1195px) {
+    .filter {
+        margin-top: 24px;
+        margin-bottom: 90px;
+    }
+}
+
+@media(max-width:399px) {
+    .filter {
+        margin-top: 26px;
+        // &__summary__title {
+        //     display: none;
+        // }
     }
 }

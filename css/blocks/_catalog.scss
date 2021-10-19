@@ -97,13 +97,10 @@
     &__buttons {
         display: flex;
         justify-content: center;
-        // align-items: center;
-        // margin: 0 auto;
         margin-bottom: 95px;
         margin-top: 18px;
     }
     &__button {
-        // max-width: 214px;
         font-size: 16px;
         font-weight: 400;
         line-height: 19px;
@@ -119,7 +116,6 @@
         }
     }
     &__pagination {
-        // width: 283px;
         border: 1px solid #EBEBEB;
         border-radius: 3px 3px 3px 3px;
         display: flex;
@@ -127,7 +123,7 @@
         padding: 11px 16px;
         &__item {
             margin: 0 11px;
-            &__ .dots {
+            .dots {
                 font-size: 16px;
                 font-weight: 300;
                 line-height: 19px;
@@ -140,10 +136,22 @@
             &__arrow__left {
                 margin: 0;
                 margin-right: 11px;
+                .arrow__left {
+                    &:hover {
+                        color: #EF5B70;
+                        transition: .5s;
+                    }
+                }
             }
             &__arrow__right {
                 margin: 0;
                 margin-left: 11px;
+                .arrow__right {
+                    &:hover {
+                        color: #EF5B70;
+                        transition: .5s;
+                    }
+                }
             }
             &__link {
                 font-size: 16px;
@@ -158,12 +166,6 @@
                     color: #EF5B70;
                 }
             }
-        }
-        &__text {
-            font-size: 16px;
-            font-weight: 300;
-            line-height: 19px;
-            color: #EBEBEB;
         }
     }
 }

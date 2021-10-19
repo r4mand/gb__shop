@@ -1,5 +1,6 @@
 .registration {
     padding-top: 13px;
+    margin-top: 64px;
     margin-bottom: 96px;
     &__wrap {
         display: flex;
@@ -107,6 +108,7 @@
 
 @media (max-width:1172px) {
     .registration {
+        margin-top: 40px;
         &__content {
             font-size: 16px;
             line-height: 19px;
