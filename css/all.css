@@ -1376,12 +1376,19 @@ footer .footer__right__links:hover {
 }
 
 .catalog__pagination__item {
-  margin: 0 11px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  margin-right: 21px;
+}
+
+.catalog__pagination__item--last, .catalog__pagination__item--sixth {
+  margin-right: 0;
 }
 
 .catalog__pagination__item__arrow__left {
   margin: 0;
-  margin-right: 11px;
+  margin-right: 16px;
 }
 
 .catalog__pagination__item__arrow__left .arrow__left:hover {
@@ -1392,7 +1399,7 @@ footer .footer__right__links:hover {
 
 .catalog__pagination__item__arrow__right {
   margin: 0;
-  margin-left: 11px;
+  margin-left: 16px;
 }
 
 .catalog__pagination__item__arrow__right .arrow__right:hover {
@@ -1415,6 +1422,16 @@ footer .footer__right__links:hover {
 }
 
 .catalog__pagination__item__link:hover {
+  color: #EF5B70;
+}
+
+.catalog__pagination__dots {
+  color: #EBEBEB;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.catalog__pagination__dots:hover {
   color: #EF5B70;
 }
 
