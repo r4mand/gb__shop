@@ -1,42 +1,36 @@
 .filter {
-    margin-top: 51px;
-    margin-bottom: 145px;
-    .container {
-        position: relative;
-    }
+    margin-top: 38px;
+    margin-bottom: 64px;
     &__wrap {
         display: flex;
-        position: absolute;
-        z-index: 1;
-    }
-    &__wrap>&__menu {
-        width: 360px;
+        gap: 304px;
     }
     &__menu {
         cursor: pointer;
-        &__box {
-            z-index: 100;
+        &__main {
+            position: relative;
+            z-index: 1;
+            padding-top: 13px;
+            .filter__summary__title {
+                padding-left: 16px;
+            }
         }
-        &__title {
-            font-size: 14px;
-            line-height: 17px;
-            color: #6F6E6E;
-        }
-        &--inner {
-            padding: 13px 0 16px 16px;
-        }
-        &[open]:first-child {
+        &__content {
+            position: absolute;
+            top: 0;
+            z-index: -1;
             background-color: #FFF;
+            padding-top: 33px;
+            width: 360px;
+        }
+        &__main[open] &__content {
             box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16px);
         }
-    }
-    &__summary {
-        list-style: none;
-        display: flex;
-        color: #6F6E6E;
-        &__title {
-            padding: 11px;
-            padding-left: 16px;
+        &__inner {
+            padding: 13px 0 16px 16px;
+            .filter__summary__title {
+                padding: 11px;
+            }
         }
     }
     &__menu[open]>&__summary {
@@ -45,7 +39,22 @@
     &__menu[open]>&__summary &__summary__icon {
         fill: #EF5B70;
     }
-    &__menu--inner &__summary {
+    &__summary {
+        list-style: none;
+        display: flex;
+        color: #6F6E6E;
+        &__title {
+            padding-right: 11px;
+        }
+        &__icon {
+            margin-top: 5px;
+            fill: #6F6E6E;
+        }
+        &__items {
+            margin-top: 24px;
+        }
+    }
+    &__menu__inner &__summary {
         border-left: 5px solid #EF5B70;
         border-bottom: 1px solid #EBEBEB;
         margin-right: 15.5px;
@@ -62,29 +71,28 @@
             color: #EF5B70;
         }
     }
-    &__summary__icon {
-        margin: 15px 0 11px 0;
-        fill: #6F6E6E;
-    }
     &__form {
         display: flex;
         justify-content: space-between;
-        margin: 16px;
+        margin-top: 13px;
         &__group {
             position: relative;
             cursor: pointer;
+        }
+        &__group:not(:last-child) {
+            margin-right: 28px;
         }
         &__span {
             font-size: 14px;
             line-height: 17px;
             color: #6F6E6E;
-            margin-right: 28px;
             &>i {
                 padding-left: 10px;
             }
         }
         &__checkbox {
             position: absolute;
+            z-index: 1;
             opacity: 0;
             text-transform: capitalize;
             border: 0;
@@ -94,6 +102,7 @@
             box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
             padding: 9px 9px 12px 9px;
             margin-top: 5px;
+            white-space: nowrap;
             .checkbox {
                 border: 1px solid #EBEBEB;
                 margin-right: 10px;
@@ -106,6 +115,7 @@
         }
         &__range {
             position: absolute;
+            z-index: 1;
             display: flex;
             opacity: 0;
             border: 0;
@@ -116,7 +126,7 @@
             padding: 9px 9px 12px 9px;
             margin-top: 5px;
             .range {
-                margin: 0 9px;
+                margin: 0 10px;
             }
         }
         &__group:hover &__range {
@@ -128,17 +138,35 @@
 
 @media (max-width:1172px) {
     .filter {
-        margin-top: 13px;
-        margin-bottom: 81px;
+        margin-top: 24px;
+        margin-bottom: 40px;
         &__wrap {
-            justify-content: space-around;
+            display: flex;
+            justify-content: space-between;
+            gap: 0;
+        }
+        &__wrap>&__menu {
+            margin-right: 0px;
+        }
+        &__form {
+            &__range {
+                right: 0;
+            }
         }
     }
 }
 
-@media(max-width:399px) {
+@media(max-width:425px) {
     .filter {
-        margin-top: 26px;
+        margin-bottom: 32px;
+        &__summary {
+            &__title--hidden {
+                display: none;
+            }
+            &__icon {
+                margin: 7px 0;
+            }
+        }
         &__form {
             &__span {
                 font-size: 12px;
@@ -151,8 +179,10 @@
             &__range {
                 font-size: 12px;
                 line-height: 14px;
-                margin-left: -101px;
             }
+        }
+        &__menu__main[open] &__menu__content {
+            margin-left: -8px;
         }
     }
 }
