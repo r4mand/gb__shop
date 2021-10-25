@@ -99,8 +99,6 @@
     &__buttons {
         display: flex;
         justify-content: center;
-        margin-bottom: 95px;
-        margin-top: 18px;
     }
     &__button {
         font-size: 16px;
@@ -112,6 +110,8 @@
         border: 1px solid #f16d7f;
         padding: 14.5px 38.5px 13.5px;
         transition: .5s;
+        margin-top: 48.5px;
+        margin-bottom: 95.5px;
         &:hover {
             background-color: #f16d7f;
             color: #fff;
@@ -123,6 +123,8 @@
         display: flex;
         justify-content: space-between;
         padding: 11px 16px;
+        margin-top: 48.5px;
+        margin-bottom: 96.5px;
         &__item {
             font-size: 16px;
             font-weight: 300;
@@ -188,8 +190,13 @@
         &__items {
             gap: 16px;
         }
-        &__buttons {
+        &__button {
+            margin-top: 33px;
             margin-bottom: 65px;
+        }
+        &__pagination {
+            margin-top: 40.5px;
+            margin-bottom: 63.5px;
         }
     }
 }
@@ -203,9 +210,12 @@
         &__text {
             margin-bottom: 65px;
         }
-        &__buttons {
-            margin-top: 25px;
-            margin-bottom: 96px;
+        &__button {
+            margin-top: 41px;
+            margin-bottom: 96.5px;
+        }
+        &__pagination {
+            margin-bottom: 64.5px;
         }
     }
 }

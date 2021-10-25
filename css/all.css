@@ -1370,8 +1370,6 @@ footer .footer__right__links:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 95px;
-  margin-top: 18px;
 }
 
 .catalog__button {
@@ -1385,6 +1383,8 @@ footer .footer__right__links:hover {
   padding: 14.5px 38.5px 13.5px;
   -webkit-transition: .5s;
   transition: .5s;
+  margin-top: 48.5px;
+  margin-bottom: 95.5px;
 }
 
 .catalog__button:hover {
@@ -1402,6 +1402,8 @@ footer .footer__right__links:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 11px 16px;
+  margin-top: 48.5px;
+  margin-bottom: 96.5px;
 }
 
 .catalog__pagination__item {
@@ -1475,8 +1477,13 @@ footer .footer__right__links:hover {
   .catalog__items {
     gap: 16px;
   }
-  .catalog__buttons {
+  .catalog__button {
+    margin-top: 33px;
     margin-bottom: 65px;
+  }
+  .catalog__pagination {
+    margin-top: 40.5px;
+    margin-bottom: 63.5px;
   }
 }
 
@@ -1488,9 +1495,12 @@ footer .footer__right__links:hover {
   .catalog__text {
     margin-bottom: 65px;
   }
-  .catalog__buttons {
-    margin-top: 25px;
-    margin-bottom: 96px;
+  .catalog__button {
+    margin-top: 41px;
+    margin-bottom: 96.5px;
+  }
+  .catalog__pagination {
+    margin-bottom: 64.5px;
   }
 }
 
@@ -1753,7 +1763,7 @@ footer .footer__right__links:hover {
   }
 }
 
-@media (max-width: 399px) {
+@media (max-width: 425px) {
   .cart {
     margin-top: 39px;
   }
@@ -1841,7 +1851,6 @@ footer .footer__right__links:hover {
 }
 
 .registration {
-  padding-top: 13px;
   margin-top: 64px;
   margin-bottom: 96px;
 }
@@ -1998,7 +2007,7 @@ footer .footer__right__links:hover {
   }
 }
 
-@media (max-width: 399px) {
+@media (max-width: 584px) {
   .registration {
     margin-bottom: 100px;
   }
