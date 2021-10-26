@@ -509,9 +509,10 @@ footer .footer__right__links:hover {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
 }
 
 .offers__item {
@@ -526,7 +527,6 @@ footer .footer__right__links:hover {
           align-items: center;
   width: 360px;
   height: 260px;
-  margin-bottom: 30px;
 }
 
 .offers__item:last-child {
@@ -578,10 +578,12 @@ footer .footer__right__links:hover {
     padding-left: 20px;
     padding-right: 20px;
   }
+  .offers__wrap {
+    gap: 20px;
+  }
   .offers__item {
     width: 232px;
     height: 168px;
-    margin-bottom: 20px;
     background-size: 232px;
   }
   .offers__item:last-child {
@@ -595,10 +597,12 @@ footer .footer__right__links:hover {
   .offers {
     margin-bottom: 32px;
   }
+  .offers__wrap {
+    gap: 32px;
+  }
   .offers__item {
     width: 343px;
     height: 247px;
-    margin-bottom: 32px;
     background-size: 343px;
   }
   .offers__item:last-child {

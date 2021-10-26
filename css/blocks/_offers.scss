@@ -3,7 +3,8 @@
     &__wrap {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 30px;
     }
     &__item {
         display: flex;
@@ -11,7 +12,6 @@
         align-items: center;
         width: 360px;
         height: 260px;
-        margin-bottom: 30px;
         &:last-child {
             width: 100%;
             max-height: 180px;
@@ -52,10 +52,12 @@
             padding-left: 20px;
             padding-right: 20px;
         }
+        &__wrap {
+            gap: 20px;
+        }
         &__item {
             width: 232px;
             height: 168px;
-            margin-bottom: 20px;
             background-size: 232px;
             &:last-child {
                 width: 100%;
@@ -69,10 +71,12 @@
 @media(max-width:425px) {
     .offers {
         margin-bottom: 32px;
+        &__wrap {
+            gap: 32px;
+        }
         &__item {
             width: 343px;
             height: 247px;
-            margin-bottom: 32px;
             background-size: 343px;
             &:last-child {
                 max-height: 116px;
