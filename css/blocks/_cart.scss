@@ -27,13 +27,14 @@
     }
     &__item {
         max-height: 306px;
+        position: relative;
         display: flex;
         box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13px);
         &:not(:last-child) {
             margin-bottom: 40px;
         }
         &__content {
-            margin: 22px 130px 0 22px;
+            // margin: 22px 130px 0 22px;
         }
         &__title {
             max-width: 188px;
@@ -67,12 +68,15 @@
             margin-left: 24px;
         }
         &__button {
+            position: absolute;
+            cursor: pointer;
             width: 18px;
             height: 18px;
             fill: #575757;
-            margin-top: 28px;
-            margin-right: 22px;
-            cursor: pointer;
+            // margin-top: 28px;
+            // margin-right: 22px;
+            right: 22px;
+            top: 28px;
         }
     }
     &__right {
@@ -167,34 +171,36 @@
     .cart {
         margin-top: 59px;
         &__wrap {
-            flex-direction: column;
+            // flex-direction: column;
+            flex-wrap: wrap;
         }
         &__items {
             margin-bottom: 62px;
         }
         &__item {
             &__content {
-                margin-right: 230px;
+                // margin-right: 230px;
             }
         }
         &__buttons {
             justify-content: space-evenly;
         }
+        &__left {
+            margin: 0 auto;
+        }
         &__right {
             display: flex;
-            align-items: end;
-            justify-content: space-between;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin: 0 auto;
             margin-top: 65px;
-            margin-left: 0;
         }
         &__form {
             margin-bottom: 0;
             &__input {
                 width: 360px;
             }
-        }
-        &__checkout {
-            margin-top: 38px;
         }
     }
 }
@@ -222,7 +228,7 @@
                 height: 188px;
             }
             &__content {
-                margin: 14px 31px 38px 17px;
+                // margin: 14px 31px 38px 17px;
             }
             &__title {
                 font-size: 16px;
@@ -243,8 +249,10 @@
             &__button {
                 width: 10px;
                 height: 11px;
-                margin-top: 17px;
-                margin-right: 12px;
+                // margin-top: 17px;
+                // margin-right: 12px;
+                top: 17px;
+                right: 12px;
             }
         }
         &__buttons {
@@ -256,11 +264,6 @@
             line-height: 14px;
             color: #575757;
             padding: 9px 18px
-        }
-        &__right {
-            flex-direction: column;
-            align-items: initial;
-            margin-top: 48px;
         }
         &__form {
             margin-right: 0;
@@ -275,6 +278,16 @@
         &__checkout {
             margin-top: 0;
             padding: 39px 34px 42px 44px;
+        }
+    }
+}
+
+@media (max-width:651px) {
+    .cart {
+        &__right {
+            flex-direction: column;
+            align-items: initial;
+            margin-top: 48px;
         }
     }
 }
