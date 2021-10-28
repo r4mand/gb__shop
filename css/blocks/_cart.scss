@@ -34,7 +34,7 @@
             margin-bottom: 40px;
         }
         &__content {
-            // margin: 22px 130px 0 22px;
+            margin: 22px 176px 62px 32px;
         }
         &__title {
             max-width: 188px;
@@ -49,9 +49,6 @@
             font-weight: 400;
             line-height: 26px;
             color: #575757;
-            &:last-child {
-                margin-right: 24px;
-            }
             &:not(:last-child) {
                 margin-bottom: 6px;
             }
@@ -73,8 +70,6 @@
             width: 18px;
             height: 18px;
             fill: #575757;
-            // margin-top: 28px;
-            // margin-right: 22px;
             right: 22px;
             top: 28px;
         }
@@ -179,7 +174,7 @@
         }
         &__item {
             &__content {
-                // margin-right: 230px;
+                // margin-right: 252px;
             }
         }
         &__buttons {
@@ -205,89 +200,113 @@
     }
 }
 
-@media (max-width:425px) {
-    .cart {
-        margin-top: 39px;
-        .container {
-            padding-left: 8px;
-            padding-right: 8px;
-        }
-        &__wrap {
-            padding-bottom: 96px;
-        }
-        &__items {
-            margin-bottom: 30px;
-        }
-        &__item {
-            max-height: 188px;
-            &:not(:last-child) {
-                margin-bottom: 32px;
-            }
-            &__img>img {
-                width: 144px;
-                height: 188px;
-            }
-            &__content {
-                // margin: 14px 31px 38px 17px;
-            }
-            &__title {
-                font-size: 16px;
-                line-height: 19px;
-                margin-bottom: 26px;
-            }
-            &__text {
-                font-size: 14px;
-                line-height: 17px;
-            }
-            &__number {
-                width: 24px;
-                height: 15px;
-                font-size: 10px;
-                line-height: 12px;
-                margin-left: 15px;
-            }
-            &__button {
-                width: 10px;
-                height: 11px;
-                // margin-top: 17px;
-                // margin-right: 12px;
-                top: 17px;
-                right: 12px;
-            }
-        }
-        &__buttons {
-            justify-content: space-between;
-        }
-        &__button {
-            font-size: 12px;
-            font-weight: 400;
-            line-height: 14px;
-            color: #575757;
-            padding: 9px 18px
-        }
-        &__form {
-            margin-right: 0;
-            margin-bottom: 48.5px;
-            &__input {
-                width: 360px;
-            }
-            &__button {
-                font-weight: 400;
-            }
-        }
-        &__checkout {
-            margin-top: 0;
-            padding: 39px 34px 42px 44px;
-        }
-    }
-}
-
+// @media (max-width:743px) {
+//     .cart {
+//         &__item {
+//             // &__content {
+//             //     margin: 13.5px 31px 38px 17px;
+//             // }
+//             &__content {
+//                 margin-right: 252px;
+//             }
+//             // &__button {
+//             // width: 10px;
+//             // height: 11px;
+//             //     right: 22px;
+//             //     top: 28px;
+//             // }
+//         }
+//     }
+// }
 @media (max-width:651px) {
     .cart {
         &__right {
             flex-direction: column;
             align-items: initial;
             margin-top: 48px;
+        }
+    }
+    @media (max-width:611px) {
+        .cart {
+            &__item {
+                &__content {
+                    margin: 13.5px 31px 38px 17px;
+                }
+            }
+        }
+    }
+    @media (max-width:425px) {
+        .cart {
+            margin-top: 39px;
+            .container {
+                padding-left: 8px;
+                padding-right: 8px;
+            }
+            &__wrap {
+                padding-bottom: 96px;
+            }
+            &__items {
+                margin-bottom: 30px;
+            }
+            &__item {
+                max-height: 188px;
+                &:not(:last-child) {
+                    margin-bottom: 32px;
+                }
+                &__img>img {
+                    width: 144px;
+                    height: 188px;
+                }
+                &__content {
+                    margin: 13.5px 31px 38px 17px;
+                }
+                &__title {
+                    font-size: 16px;
+                    line-height: 19px;
+                    margin-bottom: 26px;
+                }
+                &__text {
+                    font-size: 14px;
+                    line-height: 17px;
+                }
+                &__number {
+                    width: 24px;
+                    height: 15px;
+                    font-size: 10px;
+                    line-height: 12px;
+                    margin-left: 15px;
+                }
+                &__button {
+                    width: 10px;
+                    height: 11px;
+                    top: 17px;
+                    right: 12px;
+                }
+            }
+            &__buttons {
+                justify-content: space-between;
+            }
+            &__button {
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 14px;
+                color: #575757;
+                padding: 9px 18px
+            }
+            &__form {
+                margin-right: 0;
+                margin-bottom: 48.5px;
+                &__input {
+                    width: 360px;
+                }
+                &__button {
+                    font-weight: 400;
+                }
+            }
+            &__checkout {
+                margin-top: 0;
+                padding: 39px 34px 42px 44px;
+            }
         }
     }
 }
