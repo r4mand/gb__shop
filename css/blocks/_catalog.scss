@@ -28,15 +28,8 @@
         max-width: 360px;
         display: flex;
         flex-direction: column;
-        // margin-right: 30px;
         position: relative;
         background: #F8F8F8;
-        // margin-bottom: 30px;
-        // &:nth-child(3),
-        // &:nth-child(6),
-        // &:nth-child(9) {
-        //     margin-right: 0;
-        // }
         &__content {
             margin: 25px 0 20px 18px;
         }
@@ -131,7 +124,7 @@
             line-height: 19px;
             margin-right: 21px;
             &--last,
-            &--sixth {
+            &--penultimate {
                 margin-right: 0;
             }
             &__arrow__left {
@@ -170,10 +163,6 @@
         }
         &__dots {
             color: #EBEBEB;
-            transition: .5s;
-            &:hover {
-                color: #EF5B70;
-            }
         }
     }
 }

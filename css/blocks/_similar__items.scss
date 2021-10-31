@@ -1,0 +1,15 @@
+.similar__items {
+    margin-bottom: 128px;
+}
+
+@media(max-width:1172px) {
+    .similar__items {
+        margin-bottom: 129px;
+    }
+}
+
+@media(max-width:425px) {
+    .similar__items {
+        margin-bottom: 64px;
+    }
+}

@@ -732,7 +732,7 @@ footer .footer__right__links:hover {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 466px) {
   .slider__img > img {
     width: 374px;
     height: 454px;
@@ -938,6 +938,22 @@ footer .footer__right__links:hover {
   .description__form__radio {
     font-size: 12px;
     line-height: 14px;
+  }
+}
+
+.similar__items {
+  margin-bottom: 128px;
+}
+
+@media (max-width: 1172px) {
+  .similar__items {
+    margin-bottom: 129px;
+  }
+}
+
+@media (max-width: 425px) {
+  .similar__items {
+    margin-bottom: 64px;
   }
 }
 
@@ -1417,7 +1433,7 @@ footer .footer__right__links:hover {
   margin-right: 21px;
 }
 
-.catalog__pagination__item--last, .catalog__pagination__item--sixth {
+.catalog__pagination__item--last, .catalog__pagination__item--penultimate {
   margin-right: 0;
 }
 
@@ -1462,12 +1478,6 @@ footer .footer__right__links:hover {
 
 .catalog__pagination__dots {
   color: #EBEBEB;
-  -webkit-transition: .5s;
-  transition: .5s;
-}
-
-.catalog__pagination__dots:hover {
-  color: #EF5B70;
 }
 
 @media (max-width: 1172px) {
@@ -1564,15 +1574,16 @@ footer .footer__right__links:hover {
 }
 
 .cart__item__content {
-  margin: 22px 176px 62px 32px;
+  margin: 22px 0px 62px 32px;
+  margin-right: 11vw;
 }
 
 .cart__item__title {
-  max-width: 188px;
   font-size: 24px;
   font-weight: 400;
   line-height: 29px;
   color: #222222;
+  white-space: nowrap;
   margin-bottom: 42px;
 }
 
@@ -1731,6 +1742,9 @@ footer .footer__right__links:hover {
   .cart__items {
     margin-bottom: 62px;
   }
+  .cart__item__content {
+    margin-right: 33vw;
+  }
   .cart__buttons {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
@@ -1761,7 +1775,13 @@ footer .footer__right__links:hover {
   }
 }
 
-@media (max-width: 651px) {
+@media (max-width: 770px) {
+  .cart__item__content {
+    margin-right: 20vw;
+  }
+}
+
+@media (max-width: 667px) {
   .cart__right {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1774,13 +1794,7 @@ footer .footer__right__links:hover {
   }
 }
 
-@media (max-width: 651px) and (max-width: 611px) {
-  .cart__item__content {
-    margin: 13.5px 31px 38px 17px;
-  }
-}
-
-@media (max-width: 651px) and (max-width: 425px) {
+@media (max-width: 638px) {
   .cart {
     margin-top: 39px;
   }
